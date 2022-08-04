@@ -61,7 +61,7 @@ class ExcerciseActivity : AppCompatActivity() {
 
     private fun startTimer(){
         binding?.restProgressBar?.progress= restProgress
-        binding?.excerciseProgressBar?.progress= excercise1Progress
+
 
         resetTimer = object :CountDownTimer(10000, 1000){
             override fun onTick(millisUntilFinished: Long) {
@@ -71,14 +71,12 @@ class ExcerciseActivity : AppCompatActivity() {
 
             }
             override fun onFinish() {
-
-                setupExcerciseView()
                 currentExcercise++
+                setupExcerciseView()
+
             }
 
         }.start()
-
-
 
         }
     private fun excercise1Countdown(){
@@ -101,22 +99,22 @@ class ExcerciseActivity : AppCompatActivity() {
         }.start()
     }
     private fun setupExcerciseView(){
-        timerHeading.updateLayoutParams<ConstraintLayout.LayoutParams> {
-            bottomToTop = flprogressExcercise1.id
-        }
+
         binding?.flprogressButton?.visibility = View.INVISIBLE
         binding?.flprogressExcercise1?.visibility= View.VISIBLE
         binding?.timerHeading?.visibility = View.INVISIBLE
         binding?.tvExerciseName?.visibility = View.VISIBLE
         binding?.excerciseImages?.visibility = View.VISIBLE
 
-        binding?.excerciseImages?.setImageResource(excerciseList!![currentExcercise].getImage())
-        binding?.tvExerciseName?.text = excerciseList!![currentExcercise].getName()
 
         if (excercise1Timer!=null){
             excercise1Timer?.cancel()
             excercise1Progress = 0
         }
+
+        binding?.excerciseImages?.setImageResource(excerciseList!![currentExcercise].getImage())
+        binding?.tvExerciseName?.text = excerciseList!![currentExcercise].getName()
+
         excercise1Countdown()
     }
 
@@ -125,6 +123,10 @@ class ExcerciseActivity : AppCompatActivity() {
         if (resetTimer!=null){
           resetTimer?.cancel()
             restProgress = 0
+        }
+        if (excercise1Timer!=null){
+            excercise1Timer?.cancel()
+            excercise1Progress = 0
         }
 
 
