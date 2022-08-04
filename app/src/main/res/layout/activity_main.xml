@@ -6,16 +6,17 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-<ImageView
-    android:id="@+id/headerImage"
-    android:layout_width="match_parent"
-    android:layout_height="220dp"
-    android:contentDescription="@string/start_image"
-    app:layout_constraintTop_toTopOf="parent"
-    app:layout_constraintBottom_toTopOf="@id/frameLayout_startButton"
-    android:src="@drawable/clip_woman_doing_a_warm_up_before_exercising_with_a_barbell"
+    <ImageView
+        android:id="@+id/headerImage"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:contentDescription="@string/start_image"
+        android:src="@drawable/clip_woman_doing_a_warm_up_before_exercising_with_a_barbell"
+        app:layout_constraintBottom_toTopOf="@id/frameLayout_startButton"
+        app:layout_constraintTop_toTopOf="parent"
 
-    />
+        tools:layout_editor_absoluteX="0dp" />
+
     <FrameLayout
         android:id="@+id/frameLayout_startButton"
         android:layout_width="150dp"
