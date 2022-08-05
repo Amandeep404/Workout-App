@@ -36,11 +36,9 @@ class ExcerciseActivity : AppCompatActivity() {
         binding?.excerciseToolbar?.setNavigationOnClickListener{
             onBackPressed()
         }
+         excerciseList = Constants.defaultExcerciseList()
 
           setupRestView()
-
-        excerciseList = Constants.defaultExcerciseList()
-
 
     }
 
@@ -50,6 +48,10 @@ class ExcerciseActivity : AppCompatActivity() {
         binding?.timerHeading?.visibility = View.VISIBLE
         binding?.tvExerciseName?.visibility = View.INVISIBLE
         binding?.excerciseImages?.visibility = View.INVISIBLE
+        binding?.upcomingExerciseName?.visibility = View.VISIBLE
+        binding?.upcomingExerciseTitle?.visibility = View.VISIBLE
+
+        binding?.upcomingExerciseName?.text= excerciseList!![currentExcercise+1].getName()
 
         if (resetTimer!= null){
             resetTimer?.cancel()
@@ -105,6 +107,8 @@ class ExcerciseActivity : AppCompatActivity() {
         binding?.timerHeading?.visibility = View.INVISIBLE
         binding?.tvExerciseName?.visibility = View.VISIBLE
         binding?.excerciseImages?.visibility = View.VISIBLE
+        binding?.upcomingExerciseTitle?.visibility = View.INVISIBLE
+        binding?.upcomingExerciseName?.visibility = View.INVISIBLE
 
 
         if (excercise1Timer!=null){

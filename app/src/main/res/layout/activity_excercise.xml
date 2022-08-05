@@ -28,7 +28,7 @@
         android:textSize="@dimen/button_text_size"
         tools:visibility="visible"
         android:paddingTop="40dp"
-        android:paddingBottom="10dp"
+        android:paddingBottom="20dp"
 
         />
     <FrameLayout
@@ -73,6 +73,30 @@
                 />
         </LinearLayout>
     </FrameLayout>
+    <TextView
+        android:id="@+id/upcomingExerciseTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/flprogressButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/upcomingExerciseName"
+        android:text="Upcoming Exercise"
+        android:textSize="18dp"
+        android:paddingTop="10dp"
+        />
+    <TextView
+        android:id="@+id/upcomingExerciseName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/upcomingExerciseTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Upcomin"
+        android:textSize="22dp"
+        android:paddingTop="6dp"
+        android:textStyle="bold"
+        />
     <ImageView
         android:id="@+id/excerciseImages"
         android:layout_width="wrap_content"
@@ -147,5 +171,7 @@
                 />
         </LinearLayout>
     </FrameLayout>
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
