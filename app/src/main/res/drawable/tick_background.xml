@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item >
+        <shape
+            android:shape="ring"
+            android:innerRadiusRatio="2.7"
+            android:thicknessRatio="35"
+            android:useLevel="false" ><!--grey background will not appear if set to true-->
+
+            <!--
+
+            -->
+
+            <solid android:color="@color/deep_orange"/>
+        </shape>
+    </item>
+
+</layer-list>

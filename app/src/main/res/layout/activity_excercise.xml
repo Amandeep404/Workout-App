@@ -172,6 +172,19 @@
         </LinearLayout>
     </FrameLayout>
 
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/flprogressExcercise1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:padding = "10dp"
+        android:scrollbars="horizontal"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        />
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -7,7 +7,6 @@ class ExcerciseModels(
     private var isCompleted: Boolean,
     private var isSelected: Boolean
 
-
 ) {
     fun getId(): Int {
         return id
