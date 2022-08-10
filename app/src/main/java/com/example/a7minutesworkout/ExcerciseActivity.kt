@@ -1,5 +1,6 @@
 package com.example.a7minutesworkout
 
+import android.app.Dialog
 import android.content.Intent
 import android.media.MediaPlayer
 import android.net.Uri
@@ -18,6 +19,7 @@ import com.example.a7minutesworkout.adapter.ItemAdapter
 import com.example.a7minutesworkout.databinding.ActivityExcerciseBinding
 import kotlinx.android.synthetic.main.activity_excercise.*
 import kotlinx.android.synthetic.main.activity_excercise.view.*
+import kotlinx.android.synthetic.main.back_button_popup_layout.*
 import java.lang.Exception
 import java.util.*
 import kotlin.collections.ArrayList
@@ -54,9 +56,11 @@ class ExcerciseActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
         tts = TextToSpeech(this, this)
 
         binding?.excerciseToolbar?.setNavigationOnClickListener{
-            onBackPressed()
+           appExitCustomDialog()
         }
          excerciseList = Constants.defaultExcerciseList()
+
+
 
           setupRestView()
         exerciseNumberRecyclerView()
@@ -68,6 +72,10 @@ class ExcerciseActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
 
         exerciseAdapter = ItemAdapter(excerciseList!!)
         recycler_view.adapter = exerciseAdapter
+    }
+
+    override fun onBackPressed() {
+        appExitCustomDialog()
     }
 
     private fun setupRestView(){
@@ -189,6 +197,24 @@ class ExcerciseActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
 
     private fun speakOut(text:String){
         tts?.speak(text, TextToSpeech.QUEUE_FLUSH, null, "")
+    }
+
+    private fun appExitCustomDialog(){
+        val customDialog = Dialog(this)
+        customDialog.setContentView(R.layout.back_button_popup_layout)
+
+        customDialog.popupYes.setOnClickListener{
+            this@ExcerciseActivity.finish()
+            onBackPressed()
+        }
+
+        customDialog.popupNo.setOnClickListener{
+
+            customDialog.dismiss()
+        }
+       customDialog.setCancelable(false)
+        customDialog.show()
+
     }
 
     override fun onDestroy() {

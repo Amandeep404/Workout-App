@@ -12,10 +12,11 @@
         android:layout_height="220dp"
         android:contentDescription="@string/start_image"
         android:src="@drawable/clip_woman_doing_a_warm_up_before_exercising_with_a_barbell"
-        app:layout_constraintBottom_toTopOf="@id/frameLayout_startButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-
-        tools:layout_editor_absoluteX="0dp" />
+        android:layout_marginTop="30dp"
+        />
 
     <FrameLayout
         android:id="@+id/frameLayout_startButton"
@@ -24,8 +25,8 @@
         app:layout_constraintTop_toBottomOf="@id/headerImage"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
         android:background="@drawable/ripple_effect"
+        android:layout_marginTop="90dp"
         >
 
     <TextView
@@ -35,8 +36,45 @@
         android:text="START"
         android:textSize="@dimen/button_text_size"
         android:layout_gravity="center"
+        android:textColor="@color/navy_blue"
         />
 
     </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/flBmi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/frameLayout_startButton"
+        android:layout_marginTop="60dp"
+
+        >
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/circular_yellow_background"
+            android:fontFamily="@font/carrois_gothic_sc"
+            android:gravity="center"
+            android:text="BMI"
+            android:textColor="@color/bluish_green"
+            android:textSize="30dp" />
+
+    </FrameLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/flBmi"
+        android:text="Calculator"
+        android:textColor="@color/deep_orange"
+        android:gravity="center_horizontal"
+        android:textSize="26dp"
+        android:fontFamily="serif-monospace"
+
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

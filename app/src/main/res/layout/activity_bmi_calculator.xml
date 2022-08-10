@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center_horizontal"
+    tools:context=".BmiCalculator">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/bmiToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/white"
+        android:theme="@style/ToolBarTheme"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="Calculate your BMI"
+        app:titleTextColor="@color/navy_blue"
+
+       />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint=" Weight(in kg)"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:boxStrokeColor="@color/different_orange"
+        android:padding="20dp"
+
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etWeight"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:inputType="number"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="  Height(in cm)"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:boxStrokeColor="@color/different_orange"
+        android:padding="20dp"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etHeight"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:inputType="number"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="350dp"
+        android:layout_height="220dp"
+        app:cardUseCompatPadding="true"
+        app:cardElevation="10dp"
+        app:contentPadding="12dp"
+        app:cardCornerRadius="15dp"
+        app:cardPreventCornerOverlap="true"
+      android:layout_gravity="center"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                >
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Your BMI: "
+                    android:layout_gravity="center"
+                    android:paddingBottom="10dp"
+                    android:textSize="22dp"
+
+                    android:layout_weight="1"
+                />
+                <TextView
+                    android:id="@+id/tvBmiResult"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="30"
+                    android:layout_gravity="center"
+                    android:paddingBottom="10dp"
+                    android:textSize="22dp"
+                    android:textStyle="bold"
+                    android:layout_weight="1"
+                    />
+
+           </LinearLayout>
+    <TextView
+        android:id="@+id/tvHeightResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Overweight"
+        android:layout_gravity="center"
+        android:paddingBottom="30dp"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:id="@+id/tvBmiRecommendation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="oops! You should workout"
+        android:layout_gravity="center"
+        android:paddingBottom="10dp"
+        android:textSize="20dp"
+        android:fontFamily="@font/carrois_gothic_sc"
+        />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <Button
+        android:id="@+id/calculatorButton"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="CALCULATE"
+        android:textSize="18dp"
+        android:backgroundTint="@color/navy_blue"
+        android:layout_marginTop="20dp"
+        />
+
+</LinearLayout>
