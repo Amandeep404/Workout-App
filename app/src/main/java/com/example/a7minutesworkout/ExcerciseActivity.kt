@@ -11,6 +11,7 @@ import android.speech.tts.TextToSpeech
 import android.view.View
 import android.widget.Toast
 import androidx.constraintlayout.widget.ConstraintLayout
+import androidx.core.content.ContextCompat
 import androidx.core.view.updateLayoutParams
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -48,6 +49,8 @@ class ExcerciseActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
         super.onCreate(savedInstanceState)
         binding = ActivityExcerciseBinding.inflate(layoutInflater)
         setContentView(binding?.root)
+
+        window.statusBarColor = ContextCompat.getColor(this, R.color.different_orange)
 
         setSupportActionBar(binding?.excerciseToolbar)
 

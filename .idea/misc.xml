@@ -5,22 +5,32 @@
       <map>
         <entry key="..\:/ANDROID-STUDIO-PROJECTS/7Minutes-workout-app-main-folder/7MinutesWorkout/app/src/main/res/drawable-v24/circular_grey_background.xml" value="0.1045" />
         <entry key="..\:/ANDROID-STUDIO-PROJECTS/7Minutes-workout-app-main-folder/7MinutesWorkout/app/src/main/res/drawable-v24/progressbar_background_grey.xml" value="0.1385" />
+        <entry key="..\:/ANDROID-STUDIO-PROJECTS/7Minutes-workout-app-main-folder/7MinutesWorkout/app/src/main/res/drawable-v24/radio_not_selected.xml" value="0.1045" />
+        <entry key="..\:/ANDROID-STUDIO-PROJECTS/7Minutes-workout-app-main-folder/7MinutesWorkout/app/src/main/res/drawable-v24/radio_text_selector.xml" value="0.1045" />
+        <entry key="..\:/ANDROID-STUDIO-PROJECTS/7Minutes-workout-app-main-folder/7MinutesWorkout/app/src/main/res/drawable/circular_blue_background.xml" value="0.1075" />
         <entry key="..\:/ANDROID-STUDIO-PROJECTS/7Minutes-workout-app-main-folder/7MinutesWorkout/app/src/main/res/drawable/circular_green_background.xml" value="0.1045" />
         <entry key="..\:/ANDROID-STUDIO-PROJECTS/7Minutes-workout-app-main-folder/7MinutesWorkout/app/src/main/res/drawable/circular_white_background.xml" value="0.1" />
         <entry key="..\:/ANDROID-STUDIO-PROJECTS/7Minutes-workout-app-main-folder/7MinutesWorkout/app/src/main/res/drawable/circular_yellow_background.xml" value="0.1485" />
         <entry key="..\:/ANDROID-STUDIO-PROJECTS/7Minutes-workout-app-main-folder/7MinutesWorkout/app/src/main/res/drawable/exercise_number_background.xml" value="0.1485" />
         <entry key="..\:/ANDROID-STUDIO-PROJECTS/7Minutes-workout-app-main-folder/7MinutesWorkout/app/src/main/res/drawable/inner_button_background.xml" value="0.1385" />
         <entry key="..\:/ANDROID-STUDIO-PROJECTS/7Minutes-workout-app-main-folder/7MinutesWorkout/app/src/main/res/drawable/progressbar_background.xml" value="0.193" />
+        <entry key="..\:/ANDROID-STUDIO-PROJECTS/7Minutes-workout-app-main-folder/7MinutesWorkout/app/src/main/res/drawable/radio_group_background.xml" value="0.1" />
+        <entry key="..\:/ANDROID-STUDIO-PROJECTS/7Minutes-workout-app-main-folder/7MinutesWorkout/app/src/main/res/drawable/radio_selected.xml" value="0.1045" />
+        <entry key="..\:/ANDROID-STUDIO-PROJECTS/7Minutes-workout-app-main-folder/7MinutesWorkout/app/src/main/res/drawable/radio_selector.xml" value="0.1045" />
+        <entry key="..\:/ANDROID-STUDIO-PROJECTS/7Minutes-workout-app-main-folder/7MinutesWorkout/app/src/main/res/drawable/radio_text_color_selector.xml" value="0.1" />
+        <entry key="..\:/ANDROID-STUDIO-PROJECTS/7Minutes-workout-app-main-folder/7MinutesWorkout/app/src/main/res/drawable/radio_textt_color_selector.xml" value="0.1" />
         <entry key="..\:/ANDROID-STUDIO-PROJECTS/7Minutes-workout-app-main-folder/7MinutesWorkout/app/src/main/res/drawable/rectange_tv_result_bg.xml" value="0.1" />
         <entry key="..\:/ANDROID-STUDIO-PROJECTS/7Minutes-workout-app-main-folder/7MinutesWorkout/app/src/main/res/drawable/ripple_effect.xml" value="0.1" />
         <entry key="..\:/ANDROID-STUDIO-PROJECTS/7Minutes-workout-app-main-folder/7MinutesWorkout/app/src/main/res/drawable/start_button_background.xml" value="0.1" />
         <entry key="..\:/ANDROID-STUDIO-PROJECTS/7Minutes-workout-app-main-folder/7MinutesWorkout/app/src/main/res/drawable/tick_background.xml" value="0.1485" />
-        <entry key="..\:/ANDROID-STUDIO-PROJECTS/7Minutes-workout-app-main-folder/7MinutesWorkout/app/src/main/res/layout/activity_bmi_calculator.xml" value="0.21822916666666667" />
+        <entry key="..\:/ANDROID-STUDIO-PROJECTS/7Minutes-workout-app-main-folder/7MinutesWorkout/app/src/main/res/layout/activity_bmi_calculator.xml" value="0.2" />
         <entry key="..\:/ANDROID-STUDIO-PROJECTS/7Minutes-workout-app-main-folder/7MinutesWorkout/app/src/main/res/layout/activity_excercise.xml" value="0.23229166666666667" />
         <entry key="..\:/ANDROID-STUDIO-PROJECTS/7Minutes-workout-app-main-folder/7MinutesWorkout/app/src/main/res/layout/activity_exercise_finish_page.xml" value="0.23229166666666667" />
         <entry key="..\:/ANDROID-STUDIO-PROJECTS/7Minutes-workout-app-main-folder/7MinutesWorkout/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/ANDROID-STUDIO-PROJECTS/7Minutes-workout-app-main-folder/7MinutesWorkout/app/src/main/res/layout/activity_workout_history.xml" value="0.23229166666666667" />
         <entry key="..\:/ANDROID-STUDIO-PROJECTS/7Minutes-workout-app-main-folder/7MinutesWorkout/app/src/main/res/layout/back_button_popup_layout.xml" value="0.23229166666666667" />
         <entry key="..\:/ANDROID-STUDIO-PROJECTS/7Minutes-workout-app-main-folder/7MinutesWorkout/app/src/main/res/layout/exercise_number_status.xml" value="0.2276923076923077" />
+        <entry key="..\:/ANDROID-STUDIO-PROJECTS/7Minutes-workout-app-main-folder/7MinutesWorkout/app/src/main/res/layout/history_item.xml" value="0.23125" />
       </map>
     </option>
   </component>

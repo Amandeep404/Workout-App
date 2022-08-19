@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
+import androidx.core.content.ContextCompat
 import com.example.a7minutesworkout.databinding.ActivityMainBinding
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -16,6 +17,8 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding?.root)
 
+        window.statusBarColor = ContextCompat.getColor(this, R.color.different_orange)
+
         binding?.frameLayoutStartButton?.setOnClickListener{
             val intent = Intent(this, ExcerciseActivity::class.java)
             startActivity(intent)
@@ -24,6 +27,11 @@ class MainActivity : AppCompatActivity() {
 
         binding?.flBmi?.setOnClickListener{
             val intent = Intent(this, BmiCalculator::class.java)
+            startActivity(intent)
+        }
+
+        binding?.flHistory?.setOnClickListener{
+            val intent = Intent(this, WorkoutHistory::class.java)
             startActivity(intent)
         }
     }
