@@ -1,4 +1,6 @@
 # Workout-App
+<img src="https://user-images.githubusercontent.com/107784525/215278493-e40b8511-8251-4f42-84f6-18414a614e21.png" alt="drawing" style="width:440px"/>
+
 
 A Work-Out App built using Kotlin. Exercise number shown using RecyclerView with an adapter to save the record of the current on-going Excercise with an integrated BMI Calculator which has a toggle option of Metric and US units. Also the history about how many times the user has completed the whole Work-Out with the specific time will be recorded using ROOM DataBase in the user mobile.
 
